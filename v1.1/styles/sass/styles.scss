@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    color: white;
+    height: 100%;
+}
+
+#top-nav {
+    color: mediumseagreen;
+    
+    letter-spacing: .2rem;
+    font-weight: 300;
+}
+
+#bottom-nav {
+    button {
+        color: mediumseagreen;
+        border: none;
+        outline: none;
+    }
+    
+    .nav-link {
+        color: mediumseagreen;
+    }
+}
