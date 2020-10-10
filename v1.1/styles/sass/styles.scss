@@ -7,6 +7,10 @@ body {
     font-size: 20px;
     color: white;
     height: 100%;
+
+    display: flex;
+    flex-flow: column;
+
 }
 
 #top-nav {
@@ -27,6 +31,16 @@ body {
 #content {
     margin-top: 55.6px;
     color: black;
+    flex-grow: 1;
+
+    #home-image {
+        background: url("/imgs/main.jpg");
+        background-size: cover;
+        background-position: center 50%;
+        background-repeat: no-repeat;
+        height: 89vh;
+
+    }
 }
 
 #bottom-nav {
