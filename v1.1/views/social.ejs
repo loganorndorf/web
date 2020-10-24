@@ -1,5 +1,71 @@
 <%- include("partials/header") %>
 
-<p>THIS IS MY SOCIAL PLATFORM PAGE KEKEKE</p>
+<div id="social">
+    <div class="container">
+        <!-- TODO: code complete for the most part; need to think about how to keep the top of the first card
+        aligned to the top of the picture, and the bottom of the bottom card aligned to the bottom of the picture 
+        when scrolled as much as possible -->
+        
+        <div class="row">
+            <div class="col col-sm-0" id="leftCol">
+                <div id="socialSidePic">
+                    <h3>MEDIA PLATFORMS</h3>
+                </div>
+            </div>
+            <div class="col col-sm align-items-baseline">
+                <div class="row">
+                    <div class="card">
+                        <div class="card-img" id="instaCardPic"></div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3 class="card-title">INSTAGRAM</h3>
+                                    <p class="card-text text-muted">Check out my Instagram!</p>
+                                </div>
+                                <div class="col-4 visit-site-button-col">
+                                    <a href="https://www.instagram.com/loganorndorf/" class="btn btn-secondary px-5">VISIT</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="card-img" id="linkedInCardPic"></div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3 class="card-title">LINKED IN</h3>
+                                    <p class="card-text text-muted">Connect with me on LinkedIn!</p>
+                                </div>
+                                <div class="col-4 visit-site-button-col">
+                                    <a href="https://www.linkedin.com/in/loganorndorf/" class="btn btn-secondary px-5">CONNECT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <div class="card-img" id="githubCardPic"></div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3 class="card-title">GITHUB</h3>
+                                    <p class="card-text text-muted">Take a look at my code projects!</p>
+                                </div>
+                                <div class="col-4 visit-site-button-col">
+                                    <a href="https://github.com/loganorndorf" class="btn btn-secondary px-5">VIEW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <%- include("partials/footer") %>

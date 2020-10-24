@@ -1,0 +1,39 @@
+TODO:
+ 1) Change Home page:
+    - remove bot navbar and put icons in a more visible spot
+
+
+//================================================================//
+home-page: 
+- add 'cards' for easier navigation to other pages
+
+
+
+
+
+
+//================================================================//
+social-page: 
+- add cards that link to different social sites:
+    * instagram
+    * linkedin
+    * github
+    * strava
+    * etc.
+
+contact-page:
+- create contact form
+- add styles to contact form
+- textArea tag for comment input 
+- html form validation; look into sendgrid or other email verification apis
+
+about-page:
+- create 'cards' for navigating to different 'about' topics
+- topics include: 
+    * my running history
+    * this website
+    * achievements - athletic and academic
+
+
+ALL:
+- make changes to all pages to use Semantic Markup

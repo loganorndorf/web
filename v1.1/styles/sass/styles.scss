@@ -1,3 +1,7 @@
+$hover-font-weight: 500;
+$normal-font-weight: 300;
+$letter-spacing-fancy: .2rem;
+
 html {
     height: 100%;
 }
@@ -6,40 +10,164 @@ body {
     font-family: 'Jost', sans-serif;
     font-size: 20px;
     color: white;
-    height: 100%;
 
     display: flex;
-    flex-flow: column;
-
+    flex-direction: column;
+    height: 100%;
 }
 
 #top-nav {
     color: mediumseagreen;
     
-    letter-spacing: .2rem;
-    font-weight: 300;
+    letter-spacing: $letter-spacing-fancy;
+    font-weight: $normal-font-weight;
 
     a{
         color: mediumseagreen;
     }
 
     a:hover {
-        font-weight: 500;
+        font-weight: $hover-font-weight;
     }
 }
 
 #content {
+    // accounting for navbars
     margin-top: 55.6px;
-    color: black;
-    flex-grow: 1;
 
+    color: black;
+    flex: 1 auto;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    // home page
     #home-image {
         background: url("/imgs/main.jpg");
         background-size: cover;
         background-position: center 50%;
         background-repeat: no-repeat;
-        height: 89vh;
+        
+        flex: 1 auto;
 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .container {
+            a {
+                color: mediumseagreen;
+
+                .card {
+                    height: 100px;
+                    justify-content: center;
+    
+                    .card-body {
+                        flex: 0;
+                        align-items: end;
+                    }
+    
+                    h3 {
+                        text-align: center;
+                        margin: 0;
+    
+                        font-weight: $normal-font-weight;
+                        letter-spacing: $letter-spacing-fancy;
+                    }
+    
+                    transition: transform .2s, font-weight .2s;
+                }
+            }
+        
+            a:hover {
+                text-decoration: none;
+                h3 {
+                    font-weight: $hover-font-weight;
+                }
+                
+                .card {
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
+
+    #social {
+        
+        margin-bottom: 40px;
+        margin: 40px 0;
+        flex: 1 auto;
+
+        #leftCol {
+            width: 100%;
+
+            #socialSidePic {
+                background: url("/imgs/20181117_132038.jpg");
+                background-size: cover;
+                background-position: center bottom;
+    
+                border-radius: .15rem;
+                
+                height: 80vh;
+                width: 540px;
+                position: fixed;
+
+
+                h3 {
+                    margin: 10px 10px;
+                    color: white;
+                    font-size: 2.5rem;
+                    letter-spacing: $letter-spacing-fancy;
+                    font-weight: $normal-font-weight;
+                }
+            }
+        }
+
+
+        .card {
+            width: 100%;
+            margin-bottom: 6vh;
+
+            .card-img {
+                height: 25vh;
+            }
+
+            .visit-site-button-col {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a {
+                    background-color: mediumseagreen;
+                    border: none;
+                    font-weight: $normal-font-weight;
+                    
+                }
+                a:hover{
+                    background-color: seagreen;
+                    font-weight: $hover-font-weight;
+                }
+            }
+        }
+
+        // card images
+        #instaCardPic {
+            background: url("/imgs/insta.jpg");
+            background-size: cover;
+            background-position: center center;
+        }
+
+        #linkedInCardPic {
+            background: url("/imgs/linkedin.jpg");
+            background-size: cover;
+            background-position: center center;
+        }
+
+        #githubCardPic {
+            background: url("/imgs/github.jpg");
+            background-size: cover;
+            background-position: center center;
+        }
     }
 }
 
@@ -61,5 +189,11 @@ body {
 
     .nav-link:hover {
         color: black;
+    }
+}
+
+@media (max-width: 1200px) {
+    #leftCol {
+        display: none;
     }
 }
